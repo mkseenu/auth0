@@ -21,9 +21,9 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   baseURL: 'http://localhost:3000',
-  clientID: 'FJ3bdWWGuS9AbUUUO7HfFOu5qJkD0rf1',
-  issuerBaseURL: 'https://dev-acjtoesd.us.auth0.com',
-  secret: 'L5bUcM7vTz9I9NwVu3HAwZPcOxDDpV_ry03cotkh3208_PjDd_k1kpOQ347_eGdg'
+  clientID:  process.env.CLIENT_ID,
+  issuerBaseURL: process.env.ISSUER_BASE_URL,
+  secret: process.env.SECRET
 };
 
 const port = process.env.PORT || 3000;
